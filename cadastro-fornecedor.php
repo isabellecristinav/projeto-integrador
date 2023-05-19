@@ -43,12 +43,26 @@
 </head>
 <body>
     <div>
-        <h1>Login</h1>
+        <h1>Cadastro</h1>
         <input type="text" placeholder="Nome">
+        <br><br>
+        <input type="text" placeholder="Rua">
+        <br><br>
+        <input type="text" placeholder="Bairro">
+        <br><br>
+        <input type="text" placeholder="Cidade">
+        <br><br>
+        <input type="text" placeholder="Estado">
+        <br><br>
+        <input type="text" placeholder="Telefone">
+        <br><br>
+        <input type="text" placeholder="Site">
+        <br><br>
+        <input type="text" placeholder="E-mail">
         <br><br>
         <input type="password" placeholder="Senha">
         <br><br>
-        <button>Entrar</button>
+        <button>Cadastrar</button>
         <br></br>
     </div>
 </body>
