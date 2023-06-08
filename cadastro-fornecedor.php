@@ -44,6 +44,7 @@
 <body>
     <div>
         <h1>Cadastro</h1>
+        <form method="post" action="salvar-usuario.php">
         <input type="text" placeholder="Nome">
         <br><br>
         <input type="text" placeholder="Rua">
@@ -62,8 +63,15 @@
         <br><br>
         <input type="password" placeholder="Senha">
         <br><br>
-        <button>Cadastrar</button>
+        <button type="submit">Cadastrar</button>
         <br></br>
+        </form>
+        <?php
+            $mensagem = $_GET["msg"] ?? "";
+            if ($mensagem =="sucesso"){
+                echo "<em class= 'text-success'>Usuário cadastrado com sucesso.</em>";
+            }
+            ?>
     </div>
 </body>
 </html>
