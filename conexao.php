@@ -1,8 +1,21 @@
 <?php
-$servidor_bd = "127.0.0.1";
-$usuario_bd = "root";
-$senha_bd = "";
-$banco_de_dados = "fornecedor";
+global $wpdb;
 
-$conexao = mysqli_connect($servidor_bd, $usuario_bd, $senha_bd, $banco_de_dados);
+$tabela = $wpdb->prefix . 'wp_e_submissions_values'; // Substitua 'nome_da_tabela' pelo nome real da tabela
+
+$dados = array(
+    'key' => 'name',
+);
+
+$where = array(
+    'id' => '1',
+);
+
+$wpdb->update($tabela, $dados, $where);
+
+if ($wpdb->last_error) {
+    echo 'Erro ao atualizar os valores: ' . $wpdb->last_error;
+} else {
+    echo 'Valores atualizados com sucesso!';
+}
 ?>
