@@ -1,3 +1,10 @@
+<?php
+Plugin Name: Meu Plugin
+Description: Descrição do meu plugin.
+Version: 1.0
+Author: Seu Nome
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
